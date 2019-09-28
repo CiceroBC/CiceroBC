@@ -1,9 +1,8 @@
 @charset "utf-8";
 body {
-	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	font: 100%/1.4  Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
-	color: #000;
 	background-image: linear-gradient(#E8E8E8, rgb(36, 36, 36)) ;
 }
 
@@ -37,11 +36,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 /* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
 .container {
-	width: 75%;
-	max-width: 100%;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
-	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
-	background: rgba(221, 221, 221, 0.801);
+	width: 90%;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+	min-height: calc(100vh-160px);
 }
 
 /* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
@@ -51,18 +48,23 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 
 .sidebar1 {
-	float: left;
+	float: right;
 	width: 20%;
-	background-color: #CCCCCC;
+	min-width: 200px;
+	background-color: transparent;
+	max-height: 160px;
+
 }
 .content {
-	width: 80%;
+	width: 100%;
 	float: left;
+	min-height: calc(100vh - 160px);
+	background-color: #FFFFFF;
 }
 
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
 .content ul, .content ol { 
-	padding: 0 15px 15px 20px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+	padding: 0 10px 10px 10px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
 }
 
 /* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
@@ -120,5 +122,5 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	font: Arial;
 }
 #Followup {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Calibri, Helvetica, sans-serif;
 }
