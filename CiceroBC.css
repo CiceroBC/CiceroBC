@@ -4,7 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #000;
-	background-color: #E8E8E8;
+	background-image: linear-gradient(#E8E8E8, rgb(36, 36, 36)) ;
 }
 
 /* ~~ Element/tag selectors ~~ */
