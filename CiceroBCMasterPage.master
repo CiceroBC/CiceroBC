@@ -1,0 +1,50 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 702px;
+            height: 160px;
+        }
+        .auto-style2 {
+            width: 100%;
+        }
+        .auto-style3 {
+            width: 178px;
+        }
+        .auto-style4 {
+            width: 148px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="SiteHeader" runat="server">
+        
+            <p>
+                <table cellpadding="0" cellspacing="0" class="auto-style2">
+                    <tr>
+                        <td class="auto-style4" rowspan="2"><a href="index.htm">
+                            <img alt="CiceroBC" class="auto-style1" src="images/index.gif" /></a></td>
+                        <td class="auto-style3" rowspan="2">&nbsp;</td>
+                    </tr>
+                </table>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <asp:ContentPlaceHolder ID="PageTitle" runat="server">
+
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
